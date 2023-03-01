@@ -42,23 +42,23 @@ public class DeteccionColision : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collider jugador)
-    {
+    //private void OnTriggerExit(Collider jugador)
+    //{
 
-        if (jugador != null)
-        {
-            Debug.Log("Salio");
-            if (!activated)
-            {
-                _interactiveObject.SetActive(false);
-                
-            }
+    //    if (jugador != null)
+    //    {
+    //        Debug.Log("Salio");
+    //        if (!activated)
+    //        {
+    //            _interactiveObject.SetActive(false);
 
-
-        }
+    //        }
 
 
+    //    }
+
+
+    //   }
     }
-}
 
 //if (other.tag == "Jugador")

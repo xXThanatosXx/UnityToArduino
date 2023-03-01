@@ -16,9 +16,9 @@ public class Jugador : MonoBehaviour
     [SerializeField] private float _fallVelocity;
     [SerializeField] private float _jumpForce;
 
-    ////bala
-    //public Transform _setPoint;
-    //public GameObject _bala;
+    //bala
+    public Transform _setPoint;
+    public GameObject _bala;
 
     private void Awake()
     {
@@ -32,7 +32,7 @@ public class Jugador : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-         //Gun();
+         Gun();
         _moveAxis = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
        
 
@@ -84,13 +84,13 @@ public class Jugador : MonoBehaviour
             _direccion.y = _fallVelocity;
         }
     }
-    //private void Gun()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.F))
-    //    {
-    //        Instantiate(_bala, _setPoint.transform.position, _setPoint.transform.rotation);
+    private void Gun()
+    {
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            Instantiate(_bala, _setPoint.transform.position, _setPoint.transform.rotation);
 
-    //    }
+        }
 
-    //}
+    }
 }
