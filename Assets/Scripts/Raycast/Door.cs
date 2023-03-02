@@ -27,7 +27,7 @@ public class Door : Interactable
         
             base.Interact();
             transform.Rotate(Vector3.up * 180);
-            Debug.Log("Door Open");
+       
 
 
        
